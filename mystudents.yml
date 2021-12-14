@@ -1,0 +1,25 @@
+---
+mystudents:
+- name: Mahi
+  phone: 545466312
+  mail: mahi@gmail.com
+  address: 
+      state:
+      city:
+      pincode:
+
+- name: pooja
+  phone: 545466666312
+  mail: mahi@gmail.com
+  address: 
+      state:
+      city:
+      pincode:
+
+- name: raam
+  phone: 9464545466312
+  mail: mahi@gmail.com
+  address: 
+      state:
+      city:
+      pincode:
