@@ -13,10 +13,9 @@
    - name: i want to install git 
      apt: 
       name: git
-      stateeeeeee: present
+      state: present
       when: myresult.stderr==""
-      ignore_error: yes
-
+  
    - name: i want to install tree
      apt:  
       name: tree
