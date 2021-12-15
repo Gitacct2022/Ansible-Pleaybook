@@ -9,3 +9,13 @@
      debug: 
        msg: "{{result}}"
      
+   - name: i want to install git 
+     apt: 
+       name: git
+       state: present
+       when: myresult.stderr=""
+   - name: i want to install wget
+     apt: 
+      name: wget
+      state: present
+      when: myresult.stderr!=""
