@@ -4,6 +4,7 @@
   tasks:
    - name: i want to execute any linux command directly 
      command: hostname -f 
+   
    - name: i want to debug
      debug: 
      msg: "{myresult}"
