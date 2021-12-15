@@ -2,9 +2,17 @@
 - hosts: 172.31.2.159
   become: yes
   tasks:
-  - name: install gits
+  - name: iexecute 
     command: hostname -f
     register: myresult
   - name: display result
     debug:
       msg: "{{myresult}}"
+  - name: insall git
+    apt: 
+      name: git
+      state: present
+    when: myresult.stderr==""
+
+
+
