@@ -7,5 +7,5 @@
      register: myresult 
    - name: i want to debug
      debug: 
-     msg: "{result}"
+       msg: "{{result}}"
      
