@@ -5,17 +5,19 @@
    - name: i want to execute any linux command directly 
      command: hostname -f
      register: myresult 
+
    - name: i want to debug
      debug: 
-       msg: "{{result}}"
+       msg: "{{myresult}}"
      
    - name: i want to install git 
      apt: 
        name: git
        state: present
-       when: myresult.stderr=""
+       when: myresult.stderr==""
+
    - name: i want to install wget
      apt: 
       name: wget
       state: present
-      when: myresult.stderr!=""
+      when: myresult.stderr !==""
