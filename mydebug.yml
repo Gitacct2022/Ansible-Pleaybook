@@ -13,7 +13,7 @@
    - name: i want to install git 
      apt: 
       name: git
-      state: present
+      state: presentytttttttt
       when: myresult.stderr==""
 
    - name: i want to install tree
