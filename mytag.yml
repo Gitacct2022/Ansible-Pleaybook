@@ -1,0 +1,15 @@
+---
+- hosts: 172.31.12.159
+  become: yes
+  tasks: 
+  - name: i want to istall git
+    apt:
+      name: git
+      state: present
+      tags: mygit
+
+  - name: install wget
+    apt:  
+      name: wget
+      state: present
+      tags: mywget
