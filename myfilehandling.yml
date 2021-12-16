@@ -1,5 +1,10 @@
 ---
-- hosts: all
+- hosts: 172.31.12.159
   become: yes
   tasks: 
-    - includes_tasks: myymlfile.yml
+- includes_tasks: myymlfile.yml
+- name: install webserver
+  apt:
+    - name: apache2
+      state: present 
+
