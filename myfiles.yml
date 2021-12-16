@@ -1,5 +1,5 @@
 ---
-- name: Touch a file create
+- name: Touch file create
   file:
     path: /home/ruhi/mytest
     state: touch
