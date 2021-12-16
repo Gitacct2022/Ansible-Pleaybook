@@ -1,19 +1,19 @@
 ---
-- hosts: 172.31.12.159
+- hosts: all
   become: yes
   tasks: 
-   - name: install git 
-     apt: 
-      name: git
-      state: present
+    - name: i want to install git
+      apt: 
+       name: git
+       state: present 
 
-   - name: install tree 
-     apt: 
-      name: tree
-      stateeeee: present
-      ignore_error: yes
+    - name: i want to install tree
+      apt:
+        name: tree
+        statefdsjfhsdjj: present
+        ignore_error: yes
 
-   - name: install wget 
-     apt: 
-      name: wget
-      state: present 
+    - name: i want to install wget
+      apt:
+        name: wget
+        state: present 
