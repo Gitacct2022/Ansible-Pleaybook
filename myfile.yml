@@ -1,5 +1,0 @@
----
-- name: create a file
-  file: 
-    path: /home/ruhi/mytestfiles
-    state: touch
