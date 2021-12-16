@@ -9,8 +9,8 @@
 
     - name: i want to install tree
       apt:
-        name: tree
-        statefdsjfhsdjj: present
+       name: tree
+       statefdsjfhsdjj: present
       ignore_error: yes
         
 
