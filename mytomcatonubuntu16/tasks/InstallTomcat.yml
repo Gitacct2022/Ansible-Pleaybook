@@ -11,7 +11,8 @@
     state: directory
 
 - name: extract tar file in folder
-  command: 
-     cmd: sudo tar zxvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
-     creates: /opt/tomcat/LICENSE
+  unarchive:
+    src: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
+    dest: /opt/tomcat/LICENSE
+    remote_src: yes
      
