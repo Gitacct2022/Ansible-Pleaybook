@@ -1,7 +1,7 @@
 ---
 - name:  copy tomcat service file into node side 
   copy:
-    src: template/mytomservice.j2
+    src: /Template/mytomservice.j2
     dest: /etc/systemd/system/tomcat.service
     owner: tomcat
     group: tomcat
