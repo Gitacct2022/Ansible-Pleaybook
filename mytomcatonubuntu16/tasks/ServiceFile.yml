@@ -1,9 +1,7 @@
 ---
 - name:  copy tomcat service file into node side 
-  copy:
+  template:
     src: /home/ruhi/Ansible-Pleaybook/mytomcatonubuntu16/Template
     dest: /etc/systemd/system/tomcat.service
-    owner: tomcat
-    group: tomcat
-    mode: 0644
-    remote_src: yes
+    mode: 0774
+
