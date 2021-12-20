@@ -13,6 +13,6 @@
 - name: extract tar file in folder
   unarchive:
     src: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
-    dest: /opt/tomcat/LICENSE
+    dest: /opt/tomcat/
     remote_src: yes
      
