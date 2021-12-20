@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.42.34
+- hosts: myapplicationservers
   become: yes
   roles:
   - {role: mytomcatonubuntu16, when: ansible_os_family=="Debian" }
